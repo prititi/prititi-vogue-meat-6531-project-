@@ -1,0 +1,10 @@
+  <div>
+    <div class="check2">
+        <h3>POPULAR FEATURES</h3>
+        <div class="feature2">
+            <P><i class="fa-solid fa-circle-check"></i>Forms & Landing Pages</P>
+            <p><i class="fa-solid fa-circle-check"></i>Email Sequences</p>
+            <p><i class="fa-solid fa-circle-check"></i>Marketing Automation</p>
+            <p><i class="fa-solid fa-circle-check"></i>Email Template Builder</p>
+        </div>
+    </div>
