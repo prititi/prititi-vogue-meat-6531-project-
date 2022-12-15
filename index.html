@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +11,7 @@
 </head>
 <script src="https://kit.fontawesome.com/1426087fe4.js" crossorigin="anonymous"></script>
 <style>
+
     * {
         margin: 0px;
         padding: 0px;
@@ -16,6 +19,7 @@
 
     body {
         font-family: -apple-system, BlinkMacSystemFont, "Poppins", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-family: 'open Sans', sans-serif;
     }
 
     nav {
@@ -96,74 +100,183 @@
     }
 
     #mid {
-        width: 80%;
+        /* width: 100%; */
         margin: auto;
-         text-align: center;
-        margin: -55px 30px -26px 150px;
+        text-align: center;
+        margin: 0px 30px -26px 94px;
         justify-content: space-between;
     }
 
     #head {
-        width: 100%;
+        width: 90%;
         margin: auto;
         margin-top: 78px;
         text-align: center;
     }
 
+    #head p {
+        font-size: 20px;
+    }
+
+    #head h1 {
+        font-size: 50px;
+    }
+
     #crm {
-        border: 1px solid green;
-        width: 100%;
+        width: 80%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        gap: 40px;
+        margin-top: 30px;
     }
-    .secondchild{
-        border:1px solid red;
-        width:100%;
-        display:flex;
-    }
-    .secondchild img{
-        width: 100%;
-        height: 200px;
-    }
-    .firstchild{
-        border:1px solid red;
-        width:100%;
-        display:flex;
-    }
-    .feature1{
-        width: 80%;
-        /* border: 1px solid red; */
+
+    #priti {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
-        margin: 20px 0px 50px -10px;
-    }#h3{
-        border: 1px solid black;
-        width: 50%;
     }
-    .feature2{
-        width: 80%;
-        /* border: 1px solid red; */
+
+    .firstchild1 {
+
+        /* border: 1px solid red;  */
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
+        height: 230px;
+        padding: 31px;
+        margin: 58px -1px 42px 9px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    }
+
+    .secondchild2 {
+        /* border: 1px solid red;  */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 230px;
+        padding: 25px;
+        margin: 68px 27px 34px 9px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    }
+
+    .feature3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
-        margin: 20px 0px 50px 0px;
+        margin: 0px 0px 0px -30px;
+        margin-top: 30px;
+        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
     }
-    #h31{
-        border: 1px solid black;
-        width: 50%;
+
+    .feature4 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: 0px 0px 0px -30px;
+        margin-top: 30px;
+        /* 
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
     }
-    .btn{
-        size: ;
-        border-radius: 15px;
-        font-size: 25px;
+
+    .btn1 {
+        border-radius: 7px;
+        font-size: 20px;
+        padding: 12px;
         border-color: #6639b3;
         background-color: #6639b3;
         color: #fff;
-        margin: 0px 8px 33px -315px;
+        ;
+        margin: 42px 350px -98px 52px;
+
 
     }
+
+    #h31 {
+        width: 50%;
+        margin-top: 30px;
+        margin: 44px 0px 0px -31px;
+    }
+
+    #h3 {
+        width: 50%;
+        margin-top: 30px;
+        margin: 44px 0px 0px -31px;
+    }
+
+    #banner {
+        border: 1px solid blue;
+        width: 99.8%;
+        margin: auto;
+        text-align: center;
+        /* height: 500px; */
+        margin-top: 100px;
+        padding-bottom: 80px;
+        background-size: cover;
+        background-color: #2c4fbf;
+        position: relative;
+
+        /* margin: auto;
+        display: grid;
+        grid-template-columns: repeat(10,1fr);
+        grid-template-rows: repeat(1,1fr); */
+
+        /* gap: 10px; */
+    }
+
+    #banner h2 {
+        margin-top: 100px;
+        color: white;
+    }
+
+    .banimg {
+        /* border: 1px solid blue;; */
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 15px;
+        margin-top: 50px;
+
+    }
+    #view{
+        width: 873px;
+        height: 30px;
+        /* border: 1px solid red; */
+      display: grid;
+      text-align: center;
+      grid-template-columns: repeat(4,1fr);
+      gap: 57px;
+      margin:122px 71px 87px 264px;
+      padding: 10px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        
+    }
+    #view1{
+        text-align: center;
+        width: 100%;
+        height: 300px;
+        margin-top: 50px;
+    }
+    #view h3:hover{
+       
+        background:black;
+        height: 40px;
+        top: 0;
+        border-radius: 10px;
+        color: white;
+        padding: 0px;
+    }
+    #view1 h2{
+        font-size: 40px;
+    }
+    #view1 p{
+        margin-top: 30px;
+        font-size: 25px;
+        color: #677294;
+    }
+    
+
 </style>
 
 <body>
@@ -178,7 +291,7 @@
             <p class="home">Free Tools</p>
             <p class="home">Blog</p>
             <p class="home">Free Signup</p>
-            <p class="home">Login</p>
+            <p class="home"> <a href="login.html">LOGIN</a> </p>
             <p class="home">Free Demo</p>
         </div>
     </nav>
@@ -206,63 +319,165 @@
     </div>
     <!-- middle........................ -->
     <div id="mid">
-        <div id="head">
+        <div id="head" data-aos="flip-up">
             <h1>Single Solution for All Your Activities </h1>
             <p>Identify new opportunities, convert visitors, deliver customer happiness, and more!</p>
         </div>
-        <div id="crm">
-            <div class="crm1child" >
-                <div class="firstchild">
+        <div id="priti">
+            <div class="crm1child1" data-aos="fade-right">
+                <div class="firstchild1">
                     <div>
                         <h2>CRM Software</h2>
-                        <h3>Store unlimited contacts and build stronger relationships by keeping track of all your
-                            customer details in one place</h3>
+                        <p>Store unlimited contacts and build stronger relationships by keeping track of all your
+                            customer details in one place</p>
                     </div>
                     <div>
-                        <img width="25%" src="https://cdn5.engagebay.com/new/assets/img/icons/crm.svg" alt="">
+                        <img width="70%" src="https://cdn5.engagebay.com/new/assets/img/icons/crm.svg" alt="">
                     </div>
                 </div>
+                <hr>
                 <h3 id="h3">POPULAR FEATURES</h3>
-                <div class="check1">
-                    <div class="feature1">
+                <div class="check3">
+                    <div class="feature3" >
                         <P><i class="fa-solid fa-circle-check"></i>Contact Management</P>
                         <p><i class="fa-solid fa-circle-check"></i>Deal Management</p>
                         <p><i class="fa-solid fa-circle-check"></i>Sales Automation</p>
                         <p><i class="fa-solid fa-circle-check"></i>Appointment Scheduling</p>
                     </div>
                 </div>
-                <button class="btn">Get Started</button>
+                <button class="btn1">Get Started</button>
             </div>
-
-            <div class="crm2ndchild">
-                <div class="secondchild">
+            <div class="crm2ndchild2">
+                <div class="secondchild2" data-aos="fade-left">
                     <div>
-
                         <h2>Marketing Automation</h2>
-                        <h3>Save time by automating your marketing processes and sending personalized messages to target
-                            audiences</h3>
-
+                        <p>Save time by automating your marketing processes and sending personalized messages to target
+                            audiences</p>
                     </div>
                     <div>
-                        <img width="100%" height="200px" src="https://cdn5.engagebay.com/new/assets/img/icons/marketing-automation.svg" alt="">
+                        <img width="70%" src="https://cdn5.engagebay.com/new/assets/img/icons/marketing-automation.svg"
+                            alt="">
                     </div>
-    
                 </div>
+                <hr>
                 <div>
                     <h3 id="h31">POPULAR FEATURES</h3>
-                    <div class="check2">
-                        
-                        <div class="feature2">
+                    <div class="check4">
+
+                        <div class="feature4" >
                             <P><i class="fa-solid fa-circle-check"></i>Forms & Landing Pages</P>
                             <p><i class="fa-solid fa-circle-check"></i>Email Sequences</p>
                             <p><i class="fa-solid fa-circle-check"></i>Marketing Automation</p>
                             <p><i class="fa-solid fa-circle-check"></i>Email Template Builder</p>
                         </div>
                     </div>
-                </div> 
-                <button class="btn">Get Started</button>                                
+                </div>
+                <button class="btn1">Get Started</button>
+            </div>
+        </div>
+        <div id="priti">
+            <div class="crm1child1" data-aos="fade-right">
+                <div class="firstchild1">
+                    <div>
+                        <h2>Helpdesk Software</h2>
+                        <p>Resolve queries faster and deliver exceptional support to delight your customers</p>
+                    </div>
+                    <div>
+                        <img width="70%" src="https://cdn5.engagebay.com/new/assets/img/icons/helpdesk.svg" alt="">
+                    </div>
+                </div>
+                <hr>
+                <h3 id="h3">POPULAR FEATURES</h3>
+                <div class="check3">
+                    <div class="feature3">
+                        <P><i class="fa-solid fa-circle-check"></i>Ticket Management</P>
+                        <p><i class="fa-solid fa-circle-check"></i>Views</p>
+                        <p><i class="fa-solid fa-circle-check"></i>Macro</p>
+                        <p><i class="fa-solid fa-circle-check"></i>Ticket Automation</p>
+                    </div>
+                </div>
+                <button class="btn1">Get Started</button>
+            </div>
+            <div class="crm2ndchild2" data-aos="fade-left">
+                <div class="secondchild2">
+                    <div>
+
+                        <h2>Live Chat Software
+                        </h2>
+                        <p>Boost customer happiness and increase conversions by offering instant help when your
+                            customers need it</p>
+
+                    </div>
+                    <div>
+                        <img width="70%" src="https://cdn5.engagebay.com/new/assets/img/icons/livechat.svg" alt="">
+                    </div>
+
+                </div>
+                <hr>
+                <div>
+                    <h3 id="h31">POPULAR FEATURES</h3>
+                    <div class="check4">
+
+                        <div class="feature4">
+                            <P><i class="fa-solid fa-circle-check"></i>Instant Support </P>
+                            <p><i class="fa-solid fa-circle-check"></i>Chat Form Customisatio</p>
+                            <p><i class="fa-solid fa-circle-check"></i>Shortcuts</p>
+                            <p><i class="fa-solid fa-circle-check"></i>Notifications</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn1">Get Started</button>
             </div>
         </div>
     </div>
+    <!-- banner part -->
+    <div id="banner"  data-aos="fade-right">
+        <h2>HAPPY CUSTOMERS SHARE GREAT REVIEWS ON G2</h2>
+        <div class="banimg">
+            <img src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/CRM_HighPerformer_AsiaPacific_HighPerformer.svg"
+                alt="">
+            <img src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/CRM_HighPerformer_Europe_HighPerformer.svg"
+                alt="">
+            <img src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/CRM_HighPerformer_HighPerformer.svg" alt="">
+            <img src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/CRM_HighPerformer_Small-Business_HighPerformer.svg"
+                alt="">
+            <img src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/CRM_MomentumLeader_Leader.svg" alt="">
+            <img src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/EmailTracking_HighPerformer_HighPerformer.svg"
+                alt="">
+            <img src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/EmailTracking_HighPerformer_Mid-Market_HighPerformer.svg"
+                alt="">
+            <img src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/EmailTracking_HighPerformer_Small-Business_HighPerformer.svg"
+                alt="">
+            <img src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/HelpDesk_EasiestAdmin_EaseOfAdmin.svg"
+                alt="">
+            <img src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/OnlineFormBuilder_FastestImplementation_Small-Business_GoLiveTime.svg"
+                alt="">
+        </div>
+    </div>
+
+    <!-- view part........... -->
+    <div id="view1">
+        <h2>Create Your Own Views</h2>
+        <p>From identifying new opportunities to delivering customer happiness</p>
+       <div id="view">
+            <h3>Marketing Software</h3>
+            <h3>Free CRM Features</h3>
+            <h3>Sales Software</h3>
+            <h3>Help Desk Software</h3>
+       </div>
+    </div>
+
+
+
+
+    <!-- for animation................... -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 400
+        })
+    </script>
 </body>
+
 </html>
