@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Poppins", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-family: 'open Sans', sans-serif;
+        background-image: ('https://www.engagebay.com/blog/wp-content/uploads/2021/08/cta-engage.png');
+
+    }
+
+    nav {
+        width: 98%;
+        display: flex;
+        height: 80px;
+        background-color: #FAFAFA;
+        color: rgb(0, 0, 0);
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 25px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+         top: 0; 
+        font-weight: 700;
+         position: fixed; 
+        z-index: 100;
+    }
+
+    #logo {
+        width: 80%;
+        margin: 20px -181px 22px -11px;
+
+        color: rgb(52, 160, 126);
+    }
+
+    #tab {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .home:hover {
+
+        color: #81D4FA;
+
+    }
+
+    .front {
+
+        /* border: 1px solid blue;  */
+        padding-top: 100px;
+        width: 99.9%;
+        position: relative;
+        height: 220px;
+        border-radius: 5px;
+        padding-bottom: 80px;
+        background-size: cover;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD412RgpRXjcNdnQCE4CNDWCWAh2Zw3g_VeQ&usqp=CAU");
+        position: relative;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        ;
+
+    }
+
+    .front1 {
+        width: 50%;
+
+        /* border: 1px solid rgb(0, 255, 115); */
+        margin: 0px 27px 0px 229px;
+
+    }
+
+    .h1 {
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .p {
+        margin-top: 30px;
+        font-size: 26px;
+        color: #565656;
+        font-weight: inherit;
+    }
+
+    .btn {
+        margin-top: 30px;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: roboto, Sans-serif;
+        background-color: #f16334;
+        color: #fff;
+        border-radius: 4px 4px 4px 4px;
+        padding: 15px 30px;
+    }
+    .btn a{
+        color:#fff;;
+        background-color:  #f16334;
+        text-decoration: none;
+    }
+
+    .H2 {
+        font-size: 48px;
+        margin: 110px 0px 30px 77px;
+    }
+
+    .smile {
+        font-size: 22px;
+        margin: 27px 0px 43px 54px;
+    }
+
+    .smile p {
+        color: #565656;
+        font-size: 18px;
+
+    }
+
+    .smile {
+        margin-bottom: 20px;
+    }
+
+    .img {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0px;
+        margin: auto;
+        text-align: center;
+        justify-content: space-around;
+        margin: 52px 67px 20px 67px;
+
+    }
+
+    .img p {
+        color: #141313;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: roboto, Sans-serif;
+
+    }
+
+    .disk {
+        text-align: center;
+        font-size: 41px;
+        font-weight: 600;
+        margin: 98px 0px 60px 12px;
+    }
+
+    .disk1 {
+
+        padding: 0px 0px 14px 95px;
+        font-size: 41px;
+
+    }
+
+    .img1 {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0px;
+        margin: auto;
+        text-align: center;
+        height: 300px;
+        justify-content: space-around;
+        margin: 52px 67px 20px 67px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        ;
+    }
+
+    .img1 p {
+        font-size: 18px;
+        color: #565656;
+        ;
+    }
+
+    .disk2 {
+
+        padding: 40px 0px 21px 95px;
+        font-size: 41px;
+    }
+
+    .img3 {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0px;
+        margin: auto;
+        text-align: center;
+        height: 300px;
+        justify-content: space-around;
+        margin: 52px 67px 20px 67px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        ;
+    }
+
+    .retain {
+        text-align: center;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .retain h3 {
+        font-size: 33px;
+        margin: 170px 0px 25px 9px;
+        color: #393939;
+    }
+
+    .retain h4 {
+        font-size: 19px;
+        color: #4d4d4d;
+
+    }
+
+    .BTN {
+
+        margin-top: 30px;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: roboto, Sans-serif;
+        background-color: #f16334;
+        color: #fff;
+        border-radius: 6px 6px 6px 6px;
+        padding: 15px 35px;
+        border: none;
+    }
+    .BTN a{
+        color:#fff;;
+        background-color:  #f16334;
+        text-decoration: none;
+    }
+    .footer{
+        width: 100%;
+        background-image: url("https://cdn5.engagebay.com/new/assets/img/footer_bg.jpeg");
+        height: 700px;
+        border-radius: 20px;
+        margin-top: 50px;
+       
+    }
+
+    .naming {
+        /* border: 1px solid yellow; */
+        width: 100%;
+        margin: 23px 0px 124px -26px;
+    }
+
+    .naming1 {
+        /* border: 1ox solid red; */
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        text-align: center;
+        margin: auto;
+        gap: 20px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        /* background-image: url("https://cdn5.engagebay.com/new/assets/img/footer_bg.jpeg"); */
+    }
+
+    .naming1 p {
+        margin-top: 30px;
+        color: whitesmoke;
+    }
+
+    .end {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .logos {
+        /* border: 1px solid red; */
+        margin: 27px 92px 56px 111px;
+        justify-content: space-between;
+    }
+
+    #logoimg {
+        /* border: 1px solid red; */
+        margin: -4px 0px 20px 111px
+    }
+
+    #h38 {
+
+        /* border: 1px solid red; */
+        margin: -3px 0px 20px 108px;
+        font-size: 18px;
+        color: #fff !important;
+    }
+
+    .p3 {
+        /* border: 1px solid red;  */
+        margin-top: 10px;
+        color: #fff !important;
+        font-size: 12px;
+    }
+</style>
+
+<body>
+    <!-- header........... -->
+    <nav id="engage">
+        <a href="index.html"><img id="logo" src="logo\WhatsApp Image 2022-12-14 at 21.00.33.jpeg" alt="error"></a>
+        <div id="tab">
+            <p class="home"> <a href="index.html">Products</a> </p>
+            <p class="home"> <a href="blog.html">Pricing</a> </p>
+            <p class="home resources"> <a href="resource.html">Resources</a> </p>
+            <p class="home"> <a href="index.html">Instuctor</a> </p>
+            <p class="home"> <a href="resource.html">Free Tools</a> </p>
+            <p class="home blog"> <a href="blog.html">Blog</a></p>
+            <p class="home"> <a href="/signup.html">Free Signup</a> </p>
+            <p class="home"> <a href="/signin.html">LOGIN</a> </p>
+            <!-- <p class="home"> <a href=""></a> Free Demo</p> -->
+        </div>
+    </nav>
+
+    <!-- blog....... -->
+    <div class="front">
+        <div class="front1">
+            <h2 class="h1">The EngageBay Blog</h2>
+            <p class="p">Tips and ideas to help you delight your customers</p>
+            <button class="btn"> <a href="/signup.html">Try Now For Free</a> </button>
+        </div>
+
+    </div>
+
+    <div>
+        <h2 class="H2">Most Recent Posts</h2>
+        <div>
+            <img width="100%" height="550px" cursor="pointer"
+                src="https://www.engagebay.com/blog/wp-content/w3-webp/uploads/2022/12/real-estate-email-marketing-tips.pngw3.webp"
+                alt="">
+        </div>
+        <div class="smile">
+            <h3>15 Easy Steps to Start Real Estate Email Marketing Like To a Pro</h3>
+            <p>I probably don’t need to remind you, but…real estate is a highly competitive game!😂How many of you have
+            </p>
+        </div>
+    </div>
+    <!-- images...... -->
+    <div class="img">
+        <div>
+            <img width="90%"
+                src="https://www.engagebay.com/blog/wp-content/w3-webp/uploads/2022/12/bigcommerce-vs-magento.pngw3.webp"
+                alt="">
+            <p>BigComerce vs Magento: Features,Pricing,<br> and More Compared</p>
+        </div>
+        <div>
+            <img width="90%"
+                src="https://www.engagebay.com/blog/wp-content/w3-webp/uploads/2022/12/challenger-sales-model.pngw3.webp"
+                alt="">
+            <p>The Chalenger Sales Modal: A 5-Min Guide to <br> Close More Deals</p>
+        </div>
+        <div>
+            <img width="90%"
+                src="https://www.engagebay.com/blog/wp-content/w3-webp/uploads/2022/12/project-milestones.pngw3.webp"
+                alt="">
+            <p>Definition and Importance Project Mildstones (+Examples)</p>
+        </div>
+    </div>
+    <!-- discover...... -->
+    <div>
+        <h1 class="disk">Discover the latest in...</h1>
+        <h2 class="disk1">Marketing Bay</h2>
+        <div class="img1">
+            <div>
+                <img width="90%"
+                    src="https://www.engagebay.com/blog/wp-content/w3-webp/uploads/2022/12/plumbing-marketing.pngw3.webp"
+                    alt="">
+                <p>15 Simple Steps To Achieve Plumbing Marketing Mastery</p>
+            </div>
+            <div>
+                <img width="90%"
+                    src="https://www.engagebay.com/blog/wp-content/w3-webp/uploads/2022/11/holiday-newsletter-ideas.pngw3.webp"
+                    alt="">
+                <p>Holiday Newsletter Ideas & Examples From Top <br> Brands</p>
+            </div>
+            <div>
+                <img width="90%"
+                    src="https://www.engagebay.com/blog/wp-content/w3-webp/uploads/2022/11/christmas-email.pngw3.webp"
+                    alt="">
+                <p>How To Write The Perfect Christmas Email [+ Fresh Subject Line]</p>
+            </div>
+        </div>
+    </div>
+    <!-- services by............ -->
+    <div>
+        <h2 class="disk2">Services Bay</h2>
+        <div class="img3">
+            <div>
+                <img class="png" width="90%"
+                    src="https://www.engagebay.com/blog/wp-content/w3-webp/uploads/2022/11/sorry-for-the-inconvenience.pngw3.webp"
+                    alt="">
+                <p>The Right Way To Saying 'Sorry for the 'Sorry-for the Inconvenience'</p>
+            </div>
+            <div>
+                <img class="png" width="90%"
+                    src="https://www.engagebay.com/blog/wp-content/w3-webp/uploads/2022/01/customer-service-tips-1.pngw3.webp"
+                    alt="">
+                <p>12 Customer Service Tips for Phenomenal Success</p>
+            </div>
+            <div>
+                <img class="png" width="90%"
+                    src="https://www.engagebay.com/blog/wp-content/w3-webp/uploads/2022/09/customer-needs.pngw3.webp"
+                    alt="">
+                <p>The Extraordinary Power of Customer Needs & How To Solve Them</p>
+            </div>
+        </div>
+    </div>
+    <!-- get start with retain and grow -->
+    <div class="retain">
+        <h3>Get started with Ratain And Grow</h3>
+        <h4>A better experience for your customers, fewer headaches for your team. You’ll be set up in minutes.</h4>
+        <button class="BTN"> <a href="/signup.html">Try For Free</a></button>
+    </div>
+    <!-- footer..... -->
+    <div class="footer">
+        <div class="naming">
+            <div class="naming1">
+                <div>
+                    <p>Attract Web Visitors</p>
+                    <p>Email Marketing</p>
+                    <p>Email Templete</p>
+                    <p>Email Broadcast</p>
+                    <p>Double Opt-In-Email</p>
+                    <p>Autoresponder Email</p>
+                    <p>Email A/B Testing</p>
+                    <p>RSS-To-Email</p>
+                </div>
+                <div>
+                    <p>Integrations</p>
+                    <p>Zapier Integrations</p>
+                    <p>PieSync Integrations</p>
+                    <p>Xero Integrations</p>
+                    <p>Mailgun Integrations</p>
+                    <p>Mandrill Integrations</p>
+                    <p>Postmark Integrations</p>
+                    <p>Sendgrid Integrations
+                    </p>
+                </div>
+                <div>
+                    <p>Alternatives</p>
+                    <p>Infusion Alternatives</p>
+                    <p>Drip Alternatives</p>
+                    <p>ActiveCampaign Alternatives</p>
+                    <p>Insightly Alternatives</p>
+                    <p>AWeber Alternatives</p>
+                    <p>HubSpot Alternatives</p>
+                    <p>Agile CRM Alternatives</p>
+                </div>
+                <div>
+                    <p>Solutions
+                    </p>
+                    <p>Wordpress Plugin</p>
+                    <p>Email Tracker</p>
+                    <p>Real Easte CRM</p>
+                    <p>CRM for Non-profits</p>
+                    <p>Cal Center CRM</p>
+                    <p>Cloud CRM</p>
+                    <p>Developers</p>
+                </div>
+                <div>
+                    <p>Sales & Engage Prospects
+                    </p>
+                    <p>Email Sequences</p>
+                    <p>Web Forms</p>
+                    <p>Landing Pages</p>
+                    <p>Marketing Automation</p>
+                    <p>Push Notification</p>
+                    <p>Video MArketing Templates</p>
+                    <p>Glossary</p>
+                </div>
+            </div>
+            <hr>
+
+            <div class="end">
+                <div>
+                    <img id="logoimg" width="20%" src="logo/WhatsApp Image 2022-12-14 at 21.00.33.jpeg" alt="">
+                    <h3 id="h38">One platform for all your Marketing, Sales, and Support teams.</h3>
+                    <div class="logos">
+                        <img width="50px"
+                            src="https://png.pngtree.com/png-clipart/20180515/ourmid/pngtree-facebook-logo-facebook-icon-png-image_3566127.png"
+                            alt="">
+
+                        <img width="50px"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7nJJwLkhrFFnQdkd0aeiHxRkg8S-7O7mh95ewvxFflfvR39mxcdgERJ-04W08WEwew3g&usqp=CAU"
+                            alt="">
+
+                        <img width="50px"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTirvM1uXJua7l7ts-iJ-RM928CIHGzpAEKbw&usqp=CAU"
+                            alt="">
+                        <a href="#">Legal</a>
+                        <a href="#">Team of Service</a>
+                        <a href="#">Privacy Police</a>
+
+                    </div>
+                </div>
+                <div>
+                    <p class="p3">EngageBay Inc.,1007 North Orange Street 4th Floor #180 Wilmington, DE 19801</p>
+                    <p class="p3">support@engagebay.com , +1.(877).509.3570</p>
+                    <p class="p3">© EngageBay 2022. All Rights Reserved.</p>
+                    <p class="p3" color="white"> <a href="">Design By Priti Tiwari</a> </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let button=document.querySelectorAll("btn");
+
+</script>
+</html>
