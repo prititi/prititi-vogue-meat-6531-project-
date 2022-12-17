@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Document</title>
 </head>
 <script src="https://kit.fontawesome.com/1426087fe4.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
@@ -23,7 +22,7 @@
     }
 
     nav {
-        width: 97.5%;
+        width: 96%;
         display: flex;
         height: 80px;
         background-color: #FAFAFA;
@@ -32,9 +31,9 @@
         align-items: center;
         padding: 0px 25px;
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-        top: 0;
+        /* top: 0; */
         font-weight: 700;
-        position: fixed;
+        /* position: fixed; */
         z-index: 100;
     }
 
@@ -56,45 +55,40 @@
         color: #81D4FA;
 
     }
-
-    #header {
-        /* z-index: 100; */
-        padding-top: 50px;
-        position: relative;
-        width: 90%;
-        margin: auto;
-        text-align: center;
+    .base{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 0px;
+        width: 98%;
     }
-
-    #header h1 {
-        font-size: 80px;
-        margin-top: 30px;
+    .H1{
+        /* border: 1px solid red; */
+        margin:63px 111px 40px 90px ;
+        font-size: 48px;
     }
-
-    #header h3 {
-        font-size: 30px;
-        margin-top: 20px;
-        font-family: "Poppins", Arial, sans-serif;
-        padding-bottom: 30px;
+    .G3{
+        font-size: 24px;
+        margin: 41px 12px 46px 81px;
+        color: rgb(148, 146, 146);
     }
-
-    .Mail1{
-        height: 54px;
-        border: 2px solid #ff7342;
-        margin: 0px 0px 36px -26px;
-        width: 52%;
+    .mail{
+        height: 43px;
+        margin: 0px 0px 36px 96px;
+        width: 56%;
         border-radius: 33px;
         padding: 11px;
         font-size: 22px;
-    }
 
-    .insideone1 {
-        /* width: 30px; */
-        border: 2px solid #ff7342;
-        
-        height: 61px;
-        margin: 18px -71px 53px -209px;
-        padding:8px 43px 3px 64px;
+    }
+    .tick{
+        display: flex;
+        margin: 2px 211px 15px 118px;
+        justify-content: space-between;
+    }
+    .Insidemail{
+        height: 47px;
+        margin: 18px -71px 19px -176px;
+        padding:6px 36px 0px 34px;
         border-radius: 73px;
         background-color: #f16334;
         color: #fff;
@@ -102,20 +96,9 @@
         font-weight: 500;
         font-family: roboto, Sans-serif;
         border: none;
-        /* text-decoration: none; */
-    }
-    .insideone1:hover{
-        background-color: #2979FF;
-        /* text-decoration: none; */
-        font-weight: bold;
-    }
-    .insideone1 a{
-        
-        color:#fff;;
-        /* background-color:  #f16334; */
-        text-decoration: none;
-    }
 
+    }
+    
     #imgs {
         margin-top: 80px;
         display: flex;
@@ -854,15 +837,6 @@
         font-family: roboto, Sans-serif;
         border: none;
     }
-    .insideone:hover{
-        background-color: #2979FF;
-    }
-    .insideone a{
-        
-        color:#fff;;
-       
-        text-decoration: none;
-    }
 
     .footer {
         /* border: 1px solid red;  */
@@ -976,8 +950,9 @@
         color: #fff !important;
         font-size: 12px;
     }
-</style>
 
+
+</style>
 <body>
     <!-- header........... -->
     <nav id="engage">
@@ -994,29 +969,45 @@
             <!-- <p class="home"> <a href=""></a> Free Demo</p> -->
         </div>
     </nav>
-    <div id="header">
-        <h1>Market better. Sell faster.<br>
-            Support smarter
-        </h1>
-        <h3>One platform for all your Marketing, Sales, and Support teams</h3>
+
+    <div class="base">
         <div>
-            <input type="text" class="Mail1" placeholder="Your email adress"><button class="insideone1"> <a href="/signup.html">Get Started</a> 
-                </button>
+            <h1 class="H1">One software Many possibilities</h1>
+            <h3 class="G3"> An affordable HubSpot alternative for small and medium businesses</h3>
+            <div>
+                <input type="text" class="mail" placeholder="Your email adress"><button class="Insidemail">Get
+                    Started</button>
+            </div>
+            <div class="tick">
+                <P><i class="fa-solid fa-circle-check"></i>Free for 15 users</P>
+                <p><i class="fa-solid fa-circle-check"></i>No credit card required</p>
+            </div>
         </div>
         <div>
-            <img src="https://cdn5.engagebay.com/new/assets/img/banner-image.svg" alt="error">
-        </div>
-        <div id="imgs">
-            <img src="https://cdn5.engagebay.com/new/assets/img/p-logos/neilpatel.png" alt="">
-            <img src="https://cdn5.engagebay.com/new/assets/img/p-logos/forbs.png" alt="">
-            <img src="https://cdn5.engagebay.com/new/assets/img/p-logos/inc.png" alt="">
-            <img src="https://cdn5.engagebay.com/new/assets/img/p-logos/enterpreneur.png" alt="">
-            <img src="https://cdn5.engagebay.com/new/assets/img/p-logos/techcrunch.png" alt="">
-            <img src="https://cdn5.engagebay.com/new/assets/img/p-logos/jeffbullas.png" alt="">
-            <img src="https://cdn5.engagebay.com/new/assets/img/p-logos/business.png" alt="">
+            <img width= "80%" src="https://cdn5.engagebay.com/new/assets/img/hero/product-hero.svg" alt="">
         </div>
     </div>
-    <!-- middle........................ -->
+
+    
+    <div id="imgs">
+        <img src="https://cdn5.engagebay.com/new/assets/img/p-logos/neilpatel.png" alt="">
+        <img src="https://cdn5.engagebay.com/new/assets/img/p-logos/forbs.png" alt="">
+        <img src="https://cdn5.engagebay.com/new/assets/img/p-logos/inc.png" alt="">
+        <img src="https://cdn5.engagebay.com/new/assets/img/p-logos/enterpreneur.png" alt="">
+        <img src="https://cdn5.engagebay.com/new/assets/img/p-logos/techcrunch.png" alt="">
+        <img src="https://cdn5.engagebay.com/new/assets/img/p-logos/jeffbullas.png" alt="">
+        <img src="https://cdn5.engagebay.com/new/assets/img/p-logos/business.png" alt="">
+    </div>
+
+
+
+
+
+
+
+
+
+
     <div id="mid">
         <div id="head" data-aos="flip-up">
             <h1>Single Solution for All Your Activities </h1>
@@ -1353,7 +1344,7 @@
         <h3>All-In-One CRM software</h3>
         <div>
             <input type="text" class="Mail" placeholder="Your email adress">
-            <button class="insideone"> <a href="/signup.html">GetStarted</a>  </button>
+            <button class="insideone">GetStarted</button>
         </div>
     </div>
     <!-- footer..................... -->
@@ -1507,7 +1498,7 @@
         AOS.init({
             offset: 300,
             duration: 400,
-            delay: 0,
+            // delay: 0,
         })
     </script>
 </body>
