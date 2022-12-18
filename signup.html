@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sign up Page</title>
-  <link rel="stylesheet" href="style/signup.css" />
+  <title>Sign up Page RETAIN</title>
+  <link rel="shortcut icon" href="newlogo\logosize.jpeg" type="image/x-icon">
 </head>
 <style>
   body {
@@ -19,7 +19,7 @@
   }
 
   .container {
-    width: 35%;
+    width: 34%;
     /* height: 900px; */
     margin: auto;
     margin-top: 150px;
@@ -52,9 +52,11 @@
   }
 
   .nav>a:first-child {
-    background-color: rgb(232, 9, 9);
-    border-radius: 5px;
+    background-color: #000;
+    border-radius: 8px;
     /* margin: auto; */
+    color: whitesmoke;
+    border: none;
     width: 93%;
     font-size: 21px;
     font-weight: bold;
@@ -76,7 +78,10 @@
   .submit {
     margin: auto;
     width: 40%;
-    background-color: rgb(232, 9, 9);
+    background-color: #000;
+    color: whitesmoke;
+    border: none;
+    border-radius:16px ;
     font-weight: bold;
     font-size: 18px;
     /* font-size: large; */
@@ -87,7 +92,7 @@
   }
 
   .submit:hover {
-    background-color: #00E5FF;
+    background-color: #F4511E;
   }
 
   #form {
@@ -111,6 +116,13 @@
 
 
   }
+  
+  .p3 a{
+        text-decoration: none;
+        color: whitesmoke;
+        font-weight: bold;
+        font-size: 20px;
+    }
 </style>
 
 <body>
@@ -127,11 +139,12 @@
         <input type="password" id="password" placeholder="Enter Your Password" />
         <input type="submit" value="Submit" class="submit" />
 
-        <a class="signin" href="./signin.html">Signup</a>
+        <a class="signin" href="./signin.html">Signin</a>
         <a class="forget" href="#">forgot password?</a>
       </form>
     </div>
   </div>
+  <p class="p3" color="white"> <a href="">Design By Priti Tiwari</a> </p>
 </body>
 <script>
   let myform = document.getElementById("form");
@@ -148,6 +161,7 @@
     user_data.push(obj);
     localStorage.setItem("account-data", JSON.stringify(user_data));
     alert("Register Successful")
+    window.location.href="signin.html"
     
   });
 </script>

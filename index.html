@@ -7,7 +7,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>RETAIN AND GROW</title>
+    <link rel="shortcut icon" href="newlogo\logosize.jpeg" type="image/x-icon">
+    
 </head>
 <script src="https://kit.fontawesome.com/1426087fe4.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
@@ -27,7 +29,7 @@
         display: flex;
         height: 80px;
         background-color: #FAFAFA;
-        color: rgb(0, 0, 0);
+        /* color: rgb(0, 0, 0); */
         justify-content: space-between;
         align-items: center;
         padding: 0px 25px;
@@ -36,6 +38,10 @@
         font-weight: 700;
         position: fixed;
         z-index: 100;
+    }
+    nav a{
+        text-decoration: none;
+        color: #000;
     }
 
     #logo {
@@ -49,6 +55,7 @@
         width: 80%;
         display: flex;
         justify-content: space-between;
+        margin-top: 21px; 
     }
 
     .home:hover {
@@ -210,9 +217,18 @@
         color: #fff;
         ;
         margin: 42px 350px -98px 52px;
-
-
     }
+    .btn1 a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .btn1:hover{
+        text-decoration: none;
+        color: #fff;
+        background-color: #000;
+    }
+   
+
 
     #h31 {
         width: 50%;
@@ -798,8 +814,9 @@
         margin-top: 40px;
         text-align: center;
         margin-top: 20px;
-        font-size: 15px;
+        font-size: 17px;
         color: #464950;
+        font-weight: bold;
 
     }
 
@@ -901,6 +918,18 @@
         font-size: 15px;
 
     }
+    
+    .free a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .free:hover{
+        text-decoration: none;
+        color: #fff;
+        background-color: #000;
+        border: none;
+        font-weight: bold;
+    }
 
     .call {
         border: 1px solid blue;
@@ -914,6 +943,15 @@
         font-size: 15px;
 
     }
+    .call:hover{
+        text-decoration: none;
+        color: #fff;
+        background-color: #000;
+        border: none;
+        font-weight: bold;
+    }
+
+    
 
     .get {
         margin-top: 30px;
@@ -976,22 +1014,68 @@
         color: #fff !important;
         font-size: 12px;
     }
+    
+    .p3 a{
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .home:nth-child(8){
+    
+    /* border: 1px solid red; */
+    height: 41px;
+    padding: 9px;
+    border-radius: 11px;
+    margin:-5px -3px 16px -10px ;
+    width: 11%;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #f16334;
+    color: white;
+    border: none;
+   }
+   .home:nth-child(8):hover{
+    background-color:#757575;
+    color: #fff;
+    border: none;
+   }
+    
+   .home:nth-child(7){
+    
+    /* border: 1px solid red; */
+    height: 25px;
+    padding: 9px;
+    border-radius: 11px;
+    margin:-5px -3px 16px -10px ;
+    width: 11%;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #039BE5;
+    color: white;
+   }
+   .home:nth-child(7):hover{
+    background-color:#757575;
+    color: #fff;
+    border: none;
+   }
 </style>
 
 <body>
     <!-- header........... -->
     <nav id="engage">
-        <a href="index.html"><img id="logo" src="logo\WhatsApp Image 2022-12-14 at 21.00.33.jpeg" alt="error"></a>
+        <a href="index.html"><img id="logo" src="logo\retain.jpeg" alt="error"></a>
         <div id="tab">
-            <p class="home"> <a href="index.html">Products</a> </p>
+            <p class="home"> <a href="/product.html">Products</a> </p>
             <p class="home"> <a href="blog.html">Pricing</a> </p>
             <p class="home resources"> <a href="resource.html">Resources</a> </p>
             <p class="home"> <a href="index.html">Instuctor</a> </p>
             <p class="home"> <a href="resource.html">Free Tools</a> </p>
             <p class="home blog"> <a href="blog.html">Blog</a></p>
             <p class="home"> <a href="/signup.html">Free Signup</a> </p>
-            <p class="home"> <a href="/signin.html">LOGIN</a> </p>
+            <!-- <p class="home"> <a href="/signin.html">LOGIN</a> </p> -->
             <!-- <p class="home"> <a href=""></a> Free Demo</p> -->
+            <button class="home"><a href="/signin.html">LOGIN</a></button>
         </div>
     </nav>
     <div id="header">
@@ -1044,7 +1128,7 @@
                         <p><i class="fa-solid fa-circle-check"></i>Appointment Scheduling</p>
                     </div>
                 </div>
-                <button class="btn1">Get Started</button>
+                <button class="btn1"> <a href="/signup.html">Get Started</a></button>
             </div>
             <div class="crm2ndchild2">
                 <div class="secondchild2" data-aos="fade-left">
@@ -1071,7 +1155,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn1">Get Started</button>
+                <button class="btn1"> <a href="/signup.html">Get Started</a></button>
             </div>
         </div>
         <div id="priti">
@@ -1095,7 +1179,7 @@
                         <p><i class="fa-solid fa-circle-check"></i>Ticket Automation</p>
                     </div>
                 </div>
-                <button class="btn1">Get Started</button>
+                <button class="btn1"> <a href="/signup.html">Get Started</a></button>
             </div>
             <div class="crm2ndchild2" data-aos="fade-left">
                 <div class="secondchild2">
@@ -1125,7 +1209,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn1">Get Started</button>
+                <button class="btn1"> <a href="/signup.html">Get Started</a></button>
             </div>
         </div>
     </div>
@@ -1228,84 +1312,84 @@
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/calling.svg" alt="">
-                <p>Automation</p>
+                <p>Calling</p>
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/company-management.svg" alt="">
-                <p>Automation</p>
+                <p>company-management</p>
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/contact-management.svg" alt="">
-                <p>Automation</p>
+                <p>contact-management/p>
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/deal-management.svg" alt="">
-                <p>Automation</p>
+                <p>deal-management</p>
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/email-broadcast.svg" alt="">
-                <p>Automation</p>
+                <p>email-broadcast</p>
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/email-sequences.svg" alt="">
-                <p>Automation</p>
+                <p>email-sequences/p>
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/email-template-builder.svg"
                     alt="">
-                <p>Automation</p>
+                <p>Email email-template-builder/p>
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/forms.svg" alt="">
-                <p>Automation</p>
+                <p>Forms</p>
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/help-desk.svg" alt="">
-                <p>Automation</p>
+                <p>Help Desk</p>
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/landing-pages.svg" alt="">
-                <p>Automation</p>
+                <p>Landing-pagesp>
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/live-chat.svg" alt="">
-                <p>Automation</p>
+                <p>Live Chat</p>
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/milestone-tracking.svg" alt="">
-                <p>Automation</p>
+                <p>milestone-tracking/p>
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/calendar.svg" alt="">
-                <p>Automation</p>
+                <p>Calendar/p>
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/products.svg" alt="">
-                <p>Automation</p>
+                <p>Products/p>
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/proposal.svg" alt="">
-                <p>Automation</p>
+                <p>Proposal</p>
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/push-notifications.svg" alt="">
-                <p>Automation</p>
+                <p>Push Notifications</p>
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/segmentation.svg" alt="">
-                <p>Automation</p>
+                <p>Segmentation</p>
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/workflows.svg" alt="">
-                <p>Automation</p>
+                <p>Site messaging</p>
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/site-messaging.svg" alt="">
-                <p>Automation</p>
+                <p> SMS Broadcast/p>
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/sms-broadcast.svg" alt="">
-                <p>Automation</p>
+                <p>Social posts scheduling</p>
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/social-posts-scheduling.svg"
@@ -1314,35 +1398,35 @@
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/social-suite.svg" alt="">
-                <p>Automation</p>
+                <p>Social suite</p>
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/sticky-bars.svg" alt="">
-                <p>Automation</p>
+                <p>Sticky Bars</p>
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/task-management.svg" alt="">
-                <p>Automation</p>
+                <p>Task Management</p>
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/workflows.svg" alt="">
-                <p>Automation</p>
+                <p>Video Template</p>
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/video-templates.svg" alt="">
-                <p>Automation</p>
+                <p>Web Analytics</p>
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/web-analytics.svg" alt="">
-                <p>Automation</p>
+                <p>A/B Landing Pages</p>
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/ab-landing-pages.svg" alt="">
-                <p>Automation</p>
+                <p>Custom Reporting</p>
             </div>
             <div>
                 <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/custom-reporting.svg" alt="">
-                <p>Automation</p>
+                <p>Work Flows</p>
             </div>
         </div>
 
@@ -1370,8 +1454,8 @@
                 <input type="password" placeholder="Password">
             </div>
             <div id="Btn">
-                <button class="free">SINGUP FOR FREE</button>
-                <button class="call">SHEDULE A CALL</button>
+                <button class="free"> <a href="/signup.html">SINGUP FOR FREE</a></button>
+                <button onclick="showalert()" class="call">SHEDULE A CALL</button>
             </div>
 
         </div>
@@ -1460,6 +1544,7 @@
                     <p class="p3">EngageBay Inc.,1007 North Orange Street 4th Floor #180 Wilmington, DE 19801</p>
                     <p class="p3">support@engagebay.com , +1.(877).509.3570</p>
                     <p class="p3">© EngageBay 2022. All Rights Reserved.</p>
+                    <p class="p3" color="white"> <a href="">Design By Priti Tiwari</a> </p>
                     
                 </div>
                 
@@ -1511,5 +1596,33 @@
         })
     </script>
 </body>
+<script>
 
+    // button alert..................
+
+    function showalert(){
+        alert(" HOME PAGE Process Completed. Schedule for a call  please go to LOGIN PAGE.")
+        window.location.href="/signin.html"
+    }
+
+
+// slider...................
+    let slideshowind=0;
+    slides();
+    function slides(){
+        let i=0;
+        let slide=document.getElementsByClassName("swiper-slide")
+    for(let i=0; i<slide.length; i++){
+        slide[i].style.display="none";
+    }
+    slideshowind++;
+    if(slideshowind > slide.length){
+        slideshowind=1;
+
+    }
+    slide[slideshowind-1].style.display="block";
+    setTimeout(slides,2000);
+    }
+
+</script>
 </html>
