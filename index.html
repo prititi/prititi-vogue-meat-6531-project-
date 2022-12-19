@@ -1606,23 +1606,6 @@
     }
 
 
-// slider...................
-    let slideshowind=0;
-    slides();
-    function slides(){
-        let i=0;
-        let slide=document.getElementsByClassName("swiper-slide")
-    for(let i=0; i<slide.length; i++){
-        slide[i].style.display="none";
-    }
-    slideshowind++;
-    if(slideshowind > slide.length){
-        slideshowind=1;
-
-    }
-    slide[slideshowind-1].style.display="block";
-    setTimeout(slides,2000);
-    }
 
 </script>
 </html>
